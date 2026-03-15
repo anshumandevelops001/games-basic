@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <script src='app.js'></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src='app.js' defer></script>
     <title>Tic-Tac-Toe Game</title>
 </head>
 
 <body>
     <main>
         <h1>Tic Tac Toe</h1>
+        <h2 id="turn"></h2>
+        <div class="msgContainer hide">
+            <p id="winner"></p>
+            <button id="newBtn">New Game</button>
+        </div>
         <div class="container">
             <div class="game">
                 <button class="box"></button>

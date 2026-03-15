@@ -1,11 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+    margin-top: 10px;
 }
 
 body {
     background-color: #548687;
     text-align: center;
+}
+
+#turn {
+    margin-top: 10px;
+    color: white;
+    width: 50vw;
+    margin: auto;
+    transition: color 1s ease;
+}
+
+#turn:hover {
+    color: #ffe600;
+    width: 200px;
+}
+
+.msgContainer {
+    height: 10vmin;
+}
+
+.hide {
+    display: none;
+}
+
+#winner {
+    font-size: 2vmin;
+    color: white;
+    width: 50vw;
+    margin: auto;
+    height: 40px;
+    transition: width 2s ease;
 }
 
 .container {
@@ -38,11 +69,13 @@ body {
     color: #b0413e
 }
 
-#resetBtn {
+#resetBtn,
+#newBtn {
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
     color: #fff;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
 }
